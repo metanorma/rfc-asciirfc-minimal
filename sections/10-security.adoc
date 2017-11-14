@@ -1,0 +1,7 @@
+
+= Security Considerations
+
+* No considerations for this template
+
+* Here's how you include references <<I-D.ribose-cfrg-sm4>>, <<RFC7253>>, <<RNP>>.
+

@@ -1,0 +1,7 @@
+[abstract]
+
+This document provides a template on how to use the asciidoctor-rfc gem
+to author (or migrate!) a new Internet-Draft / RFC in AsciiDoc format.
+
+// No references allowed in the Abstract
+

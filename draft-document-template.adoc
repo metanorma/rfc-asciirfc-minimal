@@ -1,0 +1,48 @@
+= Template For Writing An Internet-Draft In AsciiDoc
+:doctype: internet-draft
+:name: draft-document-template-00
+:abbrev: RFC In AsciiDoc
+:status: info
+:ipr: trust200902
+:submissionType: individual
+:area: internet
+:intended-series: full-standard
+:workgroup: Crypto Forum Research Group
+:revdate: 2017-11-15T00:00:00Z
+:fullname: Josiah Carberry
+:lastname: Carberry
+:forename_initials: J.
+:organization: Brown University
+:phone: +1 401 863 1000
+:street: Box K, 69 Brown Street
+:city: Providence
+:code: 02912
+:country: United States of America
+:uri: https://www.brown.edu
+:email: josiah.carberry@brown.edu
+:fullname_2: Thomas Kandell
+:lastname_2: Kandell
+:forename_initials_2: T.
+:organization_2: Brown University
+:phone_2: +1 401 863 1000
+:street_2: Box G, 69 Brown Street
+:city_2: Providence
+:code_2: 02912
+:country_2: United States of America
+:uri_2: https://www.brown.edu
+:email_2: thomas.kandell@brown.edu
+//:bibliography-database: my_database.bib
+
+include::sections/00-abstract.adoc[leveloffset=+1]
+
+include::sections/01-intro.adoc[leveloffset=+1]
+include::sections/02-conventions.adoc[leveloffset=+1]
+include::sections/03-symbols.adoc[leveloffset=+1]
+include::sections/10-security.adoc[leveloffset=+1]
+include::sections/11-iana.adoc[leveloffset=+1]
+
+// must give references before appendix!
+
+include::sections/98-references.adoc[leveloffset=+1]
+include::sections/97-examples.adoc[leveloffset=+1]
+include::sections/99-acknowledgements.adoc[leveloffset=+1]
