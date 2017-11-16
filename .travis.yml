@@ -2,10 +2,6 @@ sudo: true
 language: ruby
 rvm:
   - 2.4.0
-env:
-  global:
-  - GH_REF: "PATH TO YOUR REPO (github.com/username/repo)"
-  - secure: "GITHUB PERSONAL ACCESS TOKEN"
 before_install: gem install bundler -v 1.16.0
 install:
   - curl -SL https://tools.ietf.org/tools/idnits/idnits-2.15.00.tgz | tar xzv
@@ -14,24 +10,3 @@ install:
   - bundle install --path vendor/bundle
 script:
   - make clean all
-after_success: make release
-before_deploy: "echo 'ready to deploy?'"
-  - provider: releases
-    api_key:
-      secure: "GITHUB PERSONAL ACCESS TOKEN"
-    file: "FILE(S) TO UPLOAD"
-    on:
-      repo: <github-username/repo>
-      tags: true
-      all_branches: true
-  - provider: npm
-    email: <your npm email>
-    api_key:
-      secure: "ENCRYPTED NPM API KEY"
-    on:
-      tags: true
-      all_branches: true
-      repo: <github-username/repo>
-after_deploy:
-  - "echo 'deployed!'"
-
