@@ -1,19 +1,31 @@
-= Internet-Draft: Template For Writing RFC / Internet Drafts in AsciiDoc
+= AsciiRFC Template For Writing RFC / Internet Drafts
 
-image:https://img.shields.io/travis/riboseinc/rfc-in-asciidoc-template/master.svg[
-	Build Status, link="https://travis-ci.org/riboseinc/rfc-in-asciidoc-template"]
+image:https://img.shields.io/travis/riboseinc/rfc-asciirfc-template/master.svg[
+	Build Status, link="https://travis-ci.org/riboseinc/rfc-asciirfc-template"]
 
-This Internet-Draft is written in pure AsciiDoc using the excellent
+This Internet-Draft is written in
+https://datatracker.ietf.org/doc/draft-ribose-asciirfc/[AsciiRFC]
+using the excellent
 https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
 
-== Fetching the document
+== Quick Start
+
+For a blank slate start of your Internet-Draft written in AsciiRFC:
+
+1. Simply clone this repository 
+2. Copy out all the files (including the dot-files) 
+3. Done!
+
+== Usage
+
+=== Fetching The Document
 
 [source,sh]
 ----
-git clone https://github.com/riboseinc/rfc-in-asciidoc-template
+git clone https://github.com/riboseinc/rfc-asciirfc-template
 ----
 
-== Installing Build Tools
+=== Installing Build Tools
 
 You will need Ruby, `xml2rfc` and `idnits` (for submission preflight).
 
@@ -29,44 +41,44 @@ gem install bundler
 bundle install
 ----
 
-== Building The Document
+=== Building The Document
 
 [source,sh]
 ----
 make all
 # or
-export ID_NAME=document-template
+export ID_NAME=asciirfc-template
 make draft-${ID_NAME}.txt
 ----
 
-== Checking Against idnits
+=== Checking Against idnits
 
-https://tools.ietf.org/tools/idnits/[idnits] is the RFC checking tool prior to
-submissions.
+https://tools.ietf.org/tools/idnits/[idnits] is the RFC checking tool
+prior to submissions.
 
-The `make` target finds exactly the document name from the `:name:` document
-attribute and puts the file in the right place before calling `idnits` to
-prevent it complaining about the location.
+The `make` target finds exactly the document name from the `:name:`
+document attribute and puts the file in the right place before calling
+`idnits` to prevent it complaining about the location.
 
 [source,sh]
 ----
-export ID_NAME=document-template
+export ID_NAME=asciirfc-template
 make draft-${ID_NAME}.nits
 ----
 
-== Checking for invalid / unicode characters
+=== Checking For Invalid / Unicode Characters
 
 [source,sh]
 ----
-export ID_NAME=document-template
+export ID_NAME=asciirfc-template
 pcregrep --color='auto' -n "[\x80-\xFF]" draft-${ID_NAME}.xml
 ----
 
-== Iterating the document
+=== Iterating The Document
 
 [source,sh]
 ----
-export ID_NAME=document-template
+export ID_NAME=asciirfc-template
 make clean all; open draft-${ID_NAME}.txt
 ----
 

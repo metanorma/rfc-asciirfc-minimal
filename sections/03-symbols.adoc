@@ -1,12 +1,8 @@
+[#symbols]
 = Symbols And Abbreviations
 
 == Operators
 
-$$bitlen(S)$$::
-  The length of string $$S$$ in bits (e.g., bitlen(101) == 3).
-
-$$S + T$$::
-  addition of two 32-bit vectors $$S$$ and $$T$$ with a $$mod 2^32$$ bit
-  wrap around.
-
+AsciiRFC::
+  As defined in <<I-D.ribose-asciirfc>>.
 
