@@ -1,4 +1,4 @@
-<reference  anchor='RFC8174' 
+<reference anchor='RFC8174' 
   target='https://www.rfc-editor.org/info/rfc8174'>
   <front>
     <title>Ambiguity of Uppercase vs Lowercase in RFC 2119 

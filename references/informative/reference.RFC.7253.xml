@@ -1,4 +1,4 @@
-<reference  anchor='RFC7253' 
+<reference anchor='RFC7253' 
   target='https://www.rfc-editor.org/info/rfc7253'>
   <front>
     <title>The OCB Authenticated-Encryption Algorithm</title>
