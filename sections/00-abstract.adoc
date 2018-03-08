@@ -1,8 +1,8 @@
 [abstract]
 
 This document provides a template on how to author (or migrate!) a new
-Internet-Draft / RFC in AsciiRFC format. This template requires usage of the
-`asciidoctor-rfc` Ruby gem.
+Internet-Draft / RFC in AsciiRFC format. This template requires usage 
+of the `asciidoctor-rfc` Ruby gem.
 
 // No references allowed in the Abstract
 
