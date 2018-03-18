@@ -2,9 +2,9 @@
 [#introduction]
 = Introduction
 
-AsciiRFC <<I-D.ribose-asciirfc>> is an extremely simple way to author
-Internet-Drafts and RFCs without needing to manually craft RFC XML
-<<RFC7991>>.
+AsciiRFC <<I-D.ribose-asciirfc>> is an extremely simple way to
+author Internet-Drafts and RFCs without needing to manually craft
+RFC XML <<RFC7991>>.
 
 This is a template for authors to easily start with
 <<I-D.ribose-asciirfc>>.
