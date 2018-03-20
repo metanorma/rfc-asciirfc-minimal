@@ -1,8 +1,8 @@
 
 [#security]
-= Security Considerations
+== Security Considerations
 
-* No considerations for this template
+* Please beware of implementation issues caused by <<operators>>.
 
 * Here's how you include references <<I-D.ribose-cfrg-sm4>>,
 <<RFC7253>>, <<RNP>>.

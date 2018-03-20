@@ -1,9 +1,19 @@
 
 [appendix]
 [#appendix-a]
-= Examples
+== Examples
 
-== Example 1
+=== Example 1
 
 Here's an example.
 
+[source,json]
+----
+{
+  "code": {
+    "encoding": "ascii",
+    "type":     "rfc",
+    "authors":  [ "Josiah Carberry", "Thomas Kandell" ]
+  }
+}
+----

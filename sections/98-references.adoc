@@ -1,6 +1,6 @@
 
 [bibliography]
-= Normative References
+== Normative References
 
 //bibliography::norm[]
 ++++
@@ -8,7 +8,7 @@ include::../references/normative/*[]
 ++++
 
 [bibliography]
-= Informative References
+== Informative References
 
 //bibliography::info[]
 ++++

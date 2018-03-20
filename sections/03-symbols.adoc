@@ -1,8 +1,9 @@
-[#symbols]
-= Symbols And Abbreviations
 
-== Operators
+[#symbols]
+== Symbols And Abbreviations
+
+[#operators]
+=== Operators
 
 AsciiRFC::
   As defined in <<I-D.ribose-asciirfc>>.
-

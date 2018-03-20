@@ -7,8 +7,7 @@
 :submissionType: individual
 :area: int
 :intended-series: full-standard
-:workgroup: intarea
-:revdate: 2018-01-05T00:00:00Z
+:revdate: 2018-03-21T00:00:00Z
 :fullname: Josiah Carberry
 :lastname: Carberry
 :forename_initials: J.
@@ -31,19 +30,16 @@
 :country_2: United States of America
 :uri_2: https://www.brown.edu
 :email_2: thomas.kandell@brown.edu
-//:bibliography-database: my_database.bib
 
-include::sections/00-abstract.adoc[leveloffset=+1]
-
-include::sections/01-intro.adoc[leveloffset=+1]
-include::sections/02-conventions.adoc[leveloffset=+1]
-include::sections/03-symbols.adoc[leveloffset=+1]
-include::sections/10-security.adoc[leveloffset=+1]
-include::sections/11-iana.adoc[leveloffset=+1]
+include::sections/00-abstract.adoc[]
+include::sections/01-intro.adoc[]
+include::sections/02-conventions.adoc[]
+include::sections/03-symbols.adoc[]
+include::sections/10-security.adoc[]
+include::sections/11-iana.adoc[]
 
 // must give references before appendix!
-
-include::sections/98-references.adoc[leveloffset=+1]
-include::sections/97-examples.adoc[leveloffset=+1]
-include::sections/99-acknowledgements.adoc[leveloffset=+1]
+include::sections/98-references.adoc[]
+include::sections/97-examples.adoc[]
+include::sections/99-acknowledgements.adoc[]
 
