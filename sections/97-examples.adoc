@@ -13,7 +13,7 @@ Here's an example.
   "code": {
     "encoding": "ascii",
     "type":     "rfc",
-    "authors":  [ "Josiah Carberry", "Thomas Kandell" ]
+    "authors":  [ "Josiah Carberry", "Truman Grayson" ]
   }
 }
 ----
