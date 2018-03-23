@@ -1,6 +1,6 @@
 = A Minimal Internet-Draft In AsciiRFC
 :doctype: internet-draft
-:name: draft-asciirfc-minimal-00
+:name: draft-asciirfc-minimal-01
 :abbrev: AsciiRFC Example
 :status: informational
 :ipr: trust200902

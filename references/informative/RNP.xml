@@ -1,6 +1,6 @@
-<reference anchor='RNP' target='https://open.ribose.com'>
+<reference anchor='RNP' target='https://github.com/riboseinc/rnp/'>
   <front>
-    <title>Botan: Crypto and TLS for C++11</title>
+    <title>RNP: A C library approach to OpenPGP</title>
     <author>
       <organization>Ribose Inc.</organization>
       <address>
@@ -17,5 +17,3 @@
     <date day='31' month='October' year='2017'/>
   </front>
 </reference>
-
-
