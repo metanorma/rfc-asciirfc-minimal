@@ -2,8 +2,11 @@
 [#security]
 == Security Considerations
 
-* Please beware of implementation issues caused by <<operators>>.
+Any security considerations should be placed here.
 
-* Here's how you include references <<I-D.ribose-cfrg-sm4>>,
-<<RFC7253>>, <<RNP>>.
+As described in <<main>> (here's how you refer a local anchor),
+local tools have to be installed before the document template
+can be built.
 
+Running of these local tools *MAY* produce unintended side
+effects that impact security.

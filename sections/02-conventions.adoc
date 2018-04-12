@@ -9,10 +9,9 @@ document are to be interpreted as described in BCP 14
 <<RFC2119>> <<RFC8174>> when, and only when, they appear in
 all capitals, as shown here.
 
-////
-Note: do not break formatted strings over carriage return. Bad
-things happen. (In this instance, the carriage return is
-suppressed, and no space takes its place.) This is an
-Asciidoctor issue, not an asciidoctor-rfc issue.
-////
+This document also refers to the following terms and
+definitions:
 
+AsciiRFC::
+  an AsciiDoc-derived syntax used for authoring RFCs and
+  Internet-Drafts, as defined in <<I-D.ribose-asciirfc>>.

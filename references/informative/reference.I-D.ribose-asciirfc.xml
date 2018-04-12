@@ -6,13 +6,16 @@
   <author initials="R" surname="Tse" fullname="Ronald Tse">
     <organization/>
   </author>
+  <author initials="J" surname="Lau" fullname="Jeffrey Lau">
+    <organization/>
+  </author>
   <author initials="N" surname="Nicholas" fullname="Nick Nicholas">
     <organization/>
   </author>
   <author initials="P" surname="Brasolin" fullname="Paolo Brasolin">
     <organization/>
   </author>
-    <date month="March" day="22" year="2018"/>
+    <date month="March" day="23" year="2018"/>
     <abstract>
       <t>This document describes an AsciiDoc syntax
 extension called AsciiRFC, designed for authoring IETF

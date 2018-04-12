@@ -2,8 +2,6 @@
 [#symbols]
 == Symbols And Abbreviations
 
-[#operators]
-=== Operators
+ADRFC::
+  abbreviated form of AsciiRFC
 
-AsciiRFC::
-  As defined in <<I-D.ribose-asciirfc>>.
