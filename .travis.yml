@@ -16,7 +16,6 @@ install:
   - curl -SL https://tools.ietf.org/tools/idnits/idnits-2.15.01.tgz | tar xzv
   - sudo mv idnits-2.15.01/idnits /usr/local/bin/
   - sudo pip install -r requirements.txt
-  - #sudo chown -R $USERNAME /Users/$USERNAME/Library/Caches/pip
   - bundle install --path vendor/bundle
 script:
   - make clean all
