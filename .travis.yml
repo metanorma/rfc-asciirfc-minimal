@@ -2,11 +2,21 @@ sudo: true
 language: ruby
 rvm:
   - 2.4.0
-before_install: gem install bundler -v 1.16.0
+addons:
+  apt:
+    sources:
+      - deadsnakes # source required so it finds the package definition below
+    packages:
+      - python3.5
+before_install:
+  - gem install bundler -v 1.16.0
+  - curl -SL https://bootstrap.pypa.io/get-pip.py > get-pip.py
+  - sudo python3 get-pip.py
 install:
-  - curl -SL https://tools.ietf.org/tools/idnits/idnits-2.15.00.tgz | tar xzv
-  - sudo mv idnits-2.15.00/idnits /usr/local/bin/
+  - curl -SL https://tools.ietf.org/tools/idnits/idnits-2.15.01.tgz | tar xzv
+  - sudo mv idnits-2.15.01/idnits /usr/local/bin/
   - sudo pip install -r requirements.txt
+  - #sudo chown -R $USERNAME /Users/$USERNAME/Library/Caches/pip
   - bundle install --path vendor/bundle
 script:
   - make clean all
