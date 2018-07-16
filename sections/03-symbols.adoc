@@ -3,5 +3,5 @@
 == Symbols And Abbreviations
 
 ADRFC::
-  abbreviated form of AsciiRFC
+  abbreviated form of _AsciiRFC_
 

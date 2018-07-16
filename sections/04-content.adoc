@@ -16,17 +16,19 @@ build this document template.
 
 You will need to have:
 
-* Ruby: for running the AsciiRFC toolchain
-* `asciidoctor-rfc` gem: for converting AsciiRFC into XML RFC
+. Ruby: for running the AsciiRFC toolchain
+[loweralpha]
+.. `asciidoctor-rfc` gem: for converting AsciiRFC into XML RFC
   (v2 or v3)
 
 ==== XML RFC toolchain
 
 You will need to have:
 
-* Python: for running `xml2rfc`
-* `xml2rfc`: for converting RFC XML (v2 or v3) into TXT
-* `idnits`: for submission preflight
+. Python: for running `xml2rfc`
+[loweralpha]
+.. `xml2rfc`: for converting RFC XML (v2 or v3) into TXT
+.. `idnits`: for submission preflight
 
 
 === Referencing external content
@@ -43,4 +45,4 @@ You will need to have:
 
 Code snippets should be wrapped with `<CODE BEGINS>` and
 `<CODE ENDS>` blocks, as required by the IETF Trust Legal
-Provisions (TLP) <<IETF.TLP>> specified in <<RFC5378>>.
+Provisions (TLP) <<IETF.TLP,4 parens>> specified in <<RFC5378>>.

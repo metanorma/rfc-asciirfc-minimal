@@ -9,6 +9,7 @@ Here's an example of a properly wrapped code snippet in
 accordance with rules specified in <<code-snippets>>.
 
 [source,json]
+.Example 1 Source Code
 ----
 <CODE BEGINS>
 {
