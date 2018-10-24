@@ -1,6 +1,6 @@
 SRC  := $(wildcard draft-*.adoc)
 TXT  := $(patsubst %.adoc,%.txt,$(SRC))
-XML  := $(patsubst %.adoc,%.xml,$(SRC))
+XML  := $(patsubst %.adoc,%.v2.xml,$(SRC))
 HTML := $(patsubst %.adoc,%.html,$(SRC))
 NITS := $(patsubst %.adoc,%.nits,$(SRC))
 
@@ -13,16 +13,21 @@ all: $(TXT) $(HTML) $(XML) $(NITS)
 clean:
 	rm -f $(TXT) $(HTML) $(XML)
 
-%.xml: %.adoc
-	bundle exec asciidoctor -r ./lib/glob-include-processor.rb -r asciidoctor-rfc -b rfc2 -a flush-biblio=true $^ --trace > $@
+bundle:
+	bundle install
+	bundle update
 
-%.txt: %.xml
+%.v2.xml: %.adoc | bundle
+	bundle exec metanorma -t rfc2 -r ./lib/glob-include-processor.rb $^
+	#bundle exec asciidoctor -r ./lib/glob-include-processor.rb -r asciidoctor-rfc -b rfc2 -a flush-biblio=true $^ --trace > $@
+
+%.txt: %.v2.xml
 	xml2rfc --text $^ $@
 
-%.html: %.xml
+%.html: %.v2.xml
 	xml2rfc --html $^ $@
 
-%.nits: %.txt
+%.nits: %.v2.txt
 	VERSIONED_NAME=`grep :name: $*.adoc | cut -f 2 -d ' '`; \
 	cp $^ $${VERSIONED_NAME}.txt && \
 	idnits --verbose $${VERSIONED_NAME}.txt > $@ && \
