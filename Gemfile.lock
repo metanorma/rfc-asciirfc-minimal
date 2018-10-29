@@ -29,7 +29,7 @@ GEM
     algoliasearch (1.23.2)
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
-    asciidoctor (1.5.7.1)
+    asciidoctor (1.5.8)
     asciimath (1.0.6)
     bibtex-ruby (4.4.7)
       latex-decode (~> 0.0)
@@ -129,7 +129,7 @@ GEM
       ruby-xslt
       thread_safe
       uuidtools
-    metanorma-csd (1.0.7)
+    metanorma-csd (1.0.8)
       isodoc (~> 0.9.6)
       metanorma-standoc (~> 1.0.0)
     metanorma-gb (1.0.7)
