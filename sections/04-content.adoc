@@ -9,17 +9,22 @@ Subsections are used here for demonstration purposes.
 
 === Getting started
 
-The AsciiRFC and RFC toolchains *MUST* be available locally to
+The Metanorma and RFC toolchains *MUST* be available locally to
 build this document template.
 
-==== AsciiRFC toolchain
+
+==== Metanorma toolchain
 
 You will need to have:
 
-. Ruby: for running the AsciiRFC toolchain
+. Ruby: for running Metanorma
+
 [loweralpha]
-.. `asciidoctor-rfc` gem: for converting AsciiRFC into XML RFC
+.. `metanorma-cli` gem: for the Metanorma command-line interface
+
+.. `metanorma-ietf` gem: for converting AsciiRFC into XML RFC
   (v2 or v3)
+
 
 ==== XML RFC toolchain
 

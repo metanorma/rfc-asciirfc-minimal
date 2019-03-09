@@ -1,13 +1,13 @@
 = A Minimal Internet-Draft In AsciiRFC
 :doctype: internet-draft
-:name: draft-asciirfc-minimal-02
+:name: draft-asciirfc-minimal-03
 :abbrev: AsciiRFC Example
 :status: informational
 :ipr: trust200902
 :submissionType: individual
 :area: Internet
 :intended-series: full-standard
-:revdate: 2018-04-12T00:00:00Z
+:revdate: 2018-12-12T00:00:00Z
 :fullname: Josiah Stinkney Carberry
 :lastname: Carberry
 :forename_initials: J. S.

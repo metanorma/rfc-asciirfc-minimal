@@ -21,4 +21,4 @@ install:
   - pip install --user -r requirements.txt
   - bundle install --path vendor/bundle
 script:
-  - make clean all
+  - make clean all publish deploy
