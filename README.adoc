@@ -1,12 +1,12 @@
 = AsciiRFC Template For Writing RFC / Internet Drafts
 
-image:https://img.shields.io/travis/riboseinc/rfc-asciirfc-minimal/master.svg[
-	Build Status, link="https://travis-ci.org/riboseinc/rfc-asciirfc-minimal"]
+image:https://img.shields.io/travis/metanorma/rfc-asciirfc-minimal/master.svg[
+	Build Status, link="https://travis-ci.org/metanorma/rfc-asciirfc-minimal"]
 
 This Internet-Draft is written in
 https://datatracker.ietf.org/doc/draft-ribose-asciirfc/[AsciiRFC]
 using the excellent
-https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
+https://github.com/metanorma/asciidoctor-rfc[`asciidoctor-rfc` gem].
 
 == Quick Start
 
@@ -22,7 +22,7 @@ For a blank slate start of your Internet-Draft written in AsciiRFC:
 
 [source,sh]
 ----
-git clone https://github.com/riboseinc/rfc-asciirfc-minimal
+git clone https://github.com/metanorma/rfc-asciirfc-minimal
 ----
 
 === Installing Build Tools
