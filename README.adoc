@@ -5,10 +5,10 @@ image:https://travis-ci.org/metanorma/rfc-asciirfc-minimal.svg?branch=master["Bu
 This document is available in its rendered forms here:
 
 * https://metanorma.github.io/rfc-asciirfc-minimal/[AsciiRFC Template For Writing RFC (HTML)]
-* https://metanorma.github.io/rfc-asciirfc-minimal/draft-openpgp-iana-registry-updates.txt[TXT]
-* https://metanorma.github.io/rfc-asciirfc-minimal/draft-openpgp-iana-registry-updates.nits[NITS]
-* https://metanorma.github.io/rfc-asciirfc-minimal/draft-openpgp-iana-registry-updates.xml[RFC XML v2]
-//* https://metanorma.github.io/rfc-asciirfc-minimal/draft-openpgp-iana-registry-updates.rxl[Relaton XML (Bibliographic item)]
+* https://metanorma.github.io/rfc-asciirfc-minimal/draft-asciirfc-minimal.txt[TXT]
+* https://metanorma.github.io/rfc-asciirfc-minimal/draft-asciirfc-minimal.nits[NITS]
+* https://metanorma.github.io/rfc-asciirfc-minimal/draft-asciirfc-minimal.xml[RFC XML v2]
+//* https://metanorma.github.io/rfc-asciirfc-minimal/draft-asciirfc-minimal.rxl[Relaton XML (Bibliographic item)]
 
 This Internet-Draft is written in
 https://datatracker.ietf.org/doc/draft-ribose-asciirfc/[AsciiRFC]
