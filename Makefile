@@ -6,12 +6,8 @@ IGNORE := $(shell mkdir -p $(HOME)/.cache/xml2rfc)
 include metanorma.env
 export $(shell sed 's/=.*//' metanorma.env)
 
-DOCTYPE := $(METANORMA_DOCTYPE)
-FORMATS := $(METANORMA_FORMATS)
-comma := ,
-empty :=
-space := $(empty) $(empty)
-FORMATS_LIST := $(subst $(space),$(comma),$(FORMATS))
+FORMAT_MARKER := mn-output-
+FORMATS := $(shell grep "$(FORMAT_MARKER)" *.adoc | cut -f 2 -d ' ' | tr ',' '\n' | sort | uniq | tr '\n' ' ')
 
 SRC  := $(filter-out README.adoc, $(wildcard *.adoc))
 XML  := $(patsubst %.adoc,%.xml,$(SRC))
@@ -26,9 +22,8 @@ WSD  := $(wildcard models/*.wsd)
 XMI	 := $(patsubst models/%,xmi/%,$(patsubst %.wsd,%.xmi,$(WSD)))
 PNG	 := $(patsubst models/%,images/%,$(patsubst %.wsd,%.png,$(WSD)))
 
-METANORMA_CMD_OPS := -t $(DOCTYPE) -x $(FORMATS_LIST)
-COMPILE_CMD_LOCAL := bundle exec metanorma $(METANORMA_CMD_OPS) $$FILENAME
-COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ ribose/metanorma "metanorma $(METANORMA_CMD_OPS) $$FILENAME"
+COMPILE_CMD_LOCAL := bundle exec metanorma $$FILENAME
+COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ ribose/metanorma "metanorma $$FILENAME"
 
 ifdef METANORMA_DOCKER
   COMPILE_CMD := echo "Compiling via docker..."; $(COMPILE_CMD_DOCKER)
@@ -79,9 +74,7 @@ endef
 
 $(foreach FORMAT,$(FORMATS),$(eval $(FORMAT_TASKS)))
 
-# open: $(foreach FORMAT,$(FORMATS),open-$(FORMAT))
-
-open: open-txt
+open: open-html
 
 clean:
 	rm -f $(OUT_FILES)
@@ -138,12 +131,3 @@ publish:
 	cp -a $(basename $(SRC)).* published/ && \
 	cp $(firstword $(HTML)) published/index.html; \
 	if [ -d "images" ]; then cp -a images published; fi
-
-deploy_key:
-	openssl aes-256-cbc -K $(encrypted_$(ENCRYPTION_LABEL)_key) \
-		-iv $(encrypted_$(ENCRYPTION_LABEL)_iv) -in $@.enc -out $@ -d && \
-	chmod 600 $@
-
-deploy: deploy_key
-	export COMMIT_AUTHOR_EMAIL=$(COMMIT_AUTHOR_EMAIL); \
-	./deploy.sh

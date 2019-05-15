@@ -30,6 +30,9 @@
 :country_2: United States of America
 :uri_2: https://www.brown.edu
 :email_2: truman.grayson@ribose.com
+:docfile: draft-asciirfc-minimal.adoc
+:mn-document-class: ietf
+:mn-output-extensions: xmlrfc2,txt,html,nits
 
 include::sections/00-abstract.adoc[]
 include::sections/01-intro.adoc[]

@@ -231,9 +231,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  metanorma
   metanorma-cli
-  metanorma-ietf
 
 BUNDLED WITH
    1.17.3
