@@ -1,24 +1,31 @@
-dist: trusty
-# sudo:false runs in container mode, but its setup is really slow and causes asciidoctor to crash
-sudo: true
 language: ruby
+dist: xenial
 env:
-  - IDNITS_URL=https://tools.ietf.org/tools/idnits/
+  global:
+    - JAVA_OPTS="java.awt.headless=true"
+    - COMMIT_AUTHOR_EMAIL="travis-ci@metanorma.org"
+    - IDNITS_URL=https://tools.ietf.org/tools/idnits/
 rvm:
-  - 2.4.1
+  - 2.5
 addons:
   apt:
     sources:
       - deadsnakes # source required so it finds the package definition below
     packages:
       - python3.6
+cache: bundler
 before_install:
+  - gem update --system
   - gem install bundler
-install:
+  - sudo bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | bash"
   - export IDNITS_VER=$(curl -Ls $IDNITS_URL | grep -e 'tgz' | sed -e 's/.*\(idnits-.*\).tgz.*/\1/') ; echo ${IDNITS_VER}
   - curl -SL ${IDNITS_URL}${IDNITS_VER} | tar xzv
   - export PATH=$(pwd)/${IDNITS_VER}:${PATH}
   - pip install --user -r requirements.txt
-  - bundle install --path vendor/bundle
 script:
-  - make clean all publish deploy
+  - make clean all publish
+deploy:
+  provider: script
+  script: bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-build-scripts/deploy-to-gh-pages.sh | bash"
+  on:
+    branch: master
