@@ -1,0 +1,52 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>AsciiRFC Template For Writing RFC / Internet Drafts</title><contributor><role type='author'/><organization><name>Metanorma : AsciiRFC</name></organization></contributor><relation type='partOf'><bibdata type="standard">
+  <fetched>2022-09-06</fetched>
+  <title format="text/plain" language="en" script="Latn">A Minimal Internet-Draft In AsciiRFC</title>
+  <uri type="xml">documents/draft-asciirfc-minimal.rfc.xml</uri>
+  <docidentifier type="Internet-Draft" primary="true"/>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">Josiah Stinkney Carberry</completename>
+      </name>
+      <address>
+        <city/>
+        <country/>
+      </address>
+      <phone>+1 401 863 1000</phone>
+      <email>josiah.carberry@ribose.com</email>
+      <uri/>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">Truman Grayson</completename>
+      </name>
+      <address>
+        <city/>
+        <country/>
+      </address>
+      <phone>+1 401 863 1000</phone>
+      <email>truman.grayson@ribose.com</email>
+      <uri/>
+    </person>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p><p>In many standards track documents several words are used to signify the requirements in the specification. These words are often capitalized. This document defines these words as they should be interpreted in IETF documents. This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</p>    </p>
+  </abstract>
+  <ext>
+    <doctype>rfc</doctype>
+  </ext>
+</bibdata></relation>
+</relaton-collection>

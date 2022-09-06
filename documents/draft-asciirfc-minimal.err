@@ -1,0 +1,117 @@
+/__w/rfc-asciirfc-minimal/rfc-asciirfc-minimal/site/documents/draft-asciirfc-minimal.err errors
+
+
+== Anchors
+
+(XML Line 000029): Crossreference target I-D.ribose-asciirfc is undefined
+	<xref target="I-D.ribose-asciirfc"/>
+(XML Line 000031): Crossreference target RFC7991 is undefined
+	<xref target="RFC7991"/>
+(XML Line 000034): Crossreference target RFC7991 is undefined
+	<xref target="RFC7991"/>
+(XML Line 000044): Crossreference target RFC2119 is undefined
+	<xref target="RFC2119"/>
+(XML Line 000044): Crossreference target RFC8174 is undefined
+	<xref target="RFC8174"/>
+(XML Line 000052): Crossreference target I-D.ribose-asciirfc is undefined
+	<xref target="I-D.ribose-asciirfc"/>
+(XML Line 000110): Crossreference target RFC7253 is undefined
+	<xref target="RFC7253"/>
+(XML Line 000112): Crossreference target I-D.ribose-asciirfc is undefined
+	<xref target="I-D.ribose-asciirfc"/>
+(XML Line 000114): Crossreference target RNP is undefined
+	<xref target="RNP"/>
+(XML Line 000123): Crossreference target IETF.TLP is undefined
+	<xref target="IETF.TLP">4 parens</xref>
+(XML Line 000123): Crossreference target RFC5378 is undefined
+	<xref target="RFC5378"/>
+(XML Line 000142): Crossreference target RFC3552 is undefined
+	<xref target="RFC3552">2.1.1 of</xref>
+(XML Line 000144): Crossreference target RFC3552 is undefined
+	<xref target="RFC3552">2.1.2 of</xref>
+(XML Line 000146): Crossreference target RFC3552 is undefined
+	<xref target="RFC3552">2.2 of</xref>
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000065): Hanging paragraph in clause
+	<clause id="main" inline-header="false" obligation="normative">
+	<title>Main content</title>
+	<p id="_4d5ec47e-6958-0d17-e665-dc7fc6be196c">This is where you place the main content, and the following
+	serves as a placeholder for your text.</p>
+	
+(XML Line 000072): Hanging paragraph in clause
+	<clause id="_getting_started" inline-header="false" obligation="normative">
+	<title>Getting started</title>
+	<p id="_cecbbf3c-9d3d-43e9-6afd-83cc322dbf94">The Metanorma and RFC toolchains <bcp14>MUST</bcp14> be available locally to
+	build this document template.</p>
+	
+(XML Line 000138): Table should have title
+	<table id="_1d1d19b5-5b52-7aab-d831-95aeb3a0c47d"><thead><tr><th valign="top" align="left">Security issue</th>
+	<th valign="top" align="left">Discussed in</th>
+	</tr></thead>
+	<tbody><tr><th valign="top" align="left">Confidentiality</th>
+	<td valign="top" align="left"><xref target="RFC3552">2.1.1 of</xref></td>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000007:46): element "contributor" not allowed yet; missing required element "docidentifier"
+(XML Line 000013:123): character content of element "revision-date" invalid; must be a string matching the regular expression "([\+\-]?\d{4})((-?)((0[1-9]|1[0-2])((-?)([12]\d|0[1-9]|3[01]))?|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d|[12]\d{2}|3([0-5]\d|6[1-6]))))?"
+(XML Line 000030:10): element "t" not allowed here; expected the element end-tag or element "admonition", "bookmark", "clause", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000038:94): attribute "obligation" not allowed here; expected attribute "language", "numbered", "removeInRFC", "script" or "toc"
+(XML Line 000188:80): attribute "inline-header" not allowed here; expected attribute "language", "numbered", "obligation", "removeInRFC", "script" or "toc"
+(XML Line 000210:78): element "reference" not allowed here; expected the element end-tag or element "admonition", "bibitem", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "references", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000210:78): found attribute "anchor", but no attributes allowed here
+(XML Line 000210:78): found attribute "target", but no attributes allowed here
+(XML Line 000216:67): found attribute "initials", but no attributes allowed here
+(XML Line 000216:67): found attribute "surname", but no attributes allowed here
+(XML Line 000216:67): found attribute "fullname", but no attributes allowed here
+(XML Line 000219:38): found attribute "year", but no attributes allowed here
+(XML Line 000219:38): found attribute "month", but no attributes allowed here
+(XML Line 000222:38): found attribute "name", but no attributes allowed here
+(XML Line 000222:38): found attribute "value", but no attributes allowed here
+(XML Line 000223:40): found attribute "name", but no attributes allowed here
+(XML Line 000223:40): found attribute "value", but no attributes allowed here
+(XML Line 000224:52): found attribute "name", but no attributes allowed here
+(XML Line 000224:52): found attribute "value", but no attributes allowed here
+(XML Line 000227:78): element "reference" not allowed here; expected the element end-tag or element "admonition", "bibitem", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "references", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000227:78): found attribute "anchor", but no attributes allowed here
+(XML Line 000227:78): found attribute "target", but no attributes allowed here
+(XML Line 000232:67): found attribute "initials", but no attributes allowed here
+(XML Line 000232:67): found attribute "surname", but no attributes allowed here
+(XML Line 000232:67): found attribute "fullname", but no attributes allowed here
+(XML Line 000235:41): found attribute "year", but no attributes allowed here
+(XML Line 000235:41): found attribute "month", but no attributes allowed here
+(XML Line 000245:40): found attribute "name", but no attributes allowed here
+(XML Line 000245:40): found attribute "value", but no attributes allowed here
+(XML Line 000246:52): found attribute "name", but no attributes allowed here
+(XML Line 000246:52): found attribute "value", but no attributes allowed here
+(XML Line 000249:78): element "reference" not allowed here; expected the element end-tag or element "admonition", "bibitem", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "references", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000249:78): found attribute "anchor", but no attributes allowed here
+(XML Line 000249:78): found attribute "target", but no attributes allowed here
+(XML Line 000255:63): found attribute "initials", but no attributes allowed here
+(XML Line 000255:63): found attribute "surname", but no attributes allowed here
+(XML Line 000255:63): found attribute "fullname", but no attributes allowed here
+(XML Line 000258:36): found attribute "year", but no attributes allowed here
+(XML Line 000258:36): found attribute "month", but no attributes allowed here
+(XML Line 000267:38): found attribute "name", but no attributes allowed here
+(XML Line 000267:38): found attribute "value", but no attributes allowed here
+(XML Line 000268:40): found attribute "name", but no attributes allowed here
+(XML Line 000268:40): found attribute "value", but no attributes allowed here
+(XML Line 000269:52): found attribute "name", but no attributes allowed here
+(XML Line 000269:52): found attribute "value", but no attributes allowed here
+(XML Line 000272:92): element "reference" not allowed here; expected the element end-tag or element "admonition", "bibitem", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "references", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000272:92): found attribute "anchor", but no attributes allowed here
+(XML Line 000272:92): found attribute "target", but no attributes allowed here
+(XML Line 000280:45): found attribute "month", but no attributes allowed here
+(XML Line 000280:45): found attribute "day", but no attributes allowed here
+(XML Line 000280:45): found attribute "year", but no attributes allowed here
+(XML Line 000284:68): element "reference" not allowed here; expected the element end-tag or element "admonition", "bibitem", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "references", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000284:68): found attribute "anchor", but no attributes allowed here
+(XML Line 000284:68): found attribute "target", but no attributes allowed here
+(XML Line 000302:47): found attribute "day", but no attributes allowed here
+(XML Line 000302:47): found attribute "month", but no attributes allowed here
+(XML Line 000302:47): found attribute "year", but no attributes allowed here
+(XML Line 000306:6): The processing instruction target matching "[xX][mM][lL]" is not allowed.
