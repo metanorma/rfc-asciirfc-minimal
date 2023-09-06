@@ -1,6 +1,7 @@
 = AsciiRFC Template For Writing RFC / Internet Drafts
 
-image:https://travis-ci.org/metanorma/rfc-asciirfc-minimal.svg?branch=master["Build Status", link="https://travis-ci.org/metanorma/rfc-asciirfc-minimal"]
+image:https://github.com/metanorma/rfc-asciirfc-minimal/actions/workflows/docker.yml/badge.svg["Build Status", link="https://github.com/metanorma/rfc-asciirfc-minimal/actions/workflows/docker.yml"]
+image:https://github.com/metanorma/rfc-asciirfc-minimal/actions/workflows/generate.yml/badge.svg["Build Status", link="https://github.com/metanorma/rfc-asciirfc-minimal/actions/workflows/generate.yml"]
 
 This document is available in its rendered forms here:
 
